@@ -1,0 +1,39 @@
+# Node.js dependencies
+node_modules/
+
+# Logs
+logs/
+*.log
+*.log.*
+
+# Environment files
+.env
+
+# Build output
+/dist
+/build
+
+# IDE/editor directories
+.vscode/
+.idea/
+
+# OS-specific files
+.DS_Store
+Thumbs.db
+
+# npm package lock file (optional, depending on use case)
+package-lock.json
+
+# Temporary files
+*.swp
+*.swo
+*.bak
+*.tmp
+
+# Optional: Ignore coverage reports (if you use a tool like Jest)
+coverage/
+
+# Optional: Ignore npm debug files
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*

@@ -6,7 +6,7 @@ require('dotenv').config(); // Load environment variables from .env file
 
 // Import middleware
 const limiter = require('./middlewares/rateLimiter'); // Import rate limiter middleware to prevent DDoS attacks
-const apiKeyAuth = require('./middlewares/apiKeyAuth'); // Import API key authentication middleware to secure the API
+// const apiKeyAuth = require('./middlewares/apiKeyAuth'); // Import API key authentication middleware to secure the API
 
 // Import routes and background jobs
 const statsRoutes = require('./routes/statsRoutes'); // Import stats routes for handling cryptocurrency data requests
@@ -23,7 +23,7 @@ app.use(express.json());  // Parse incoming JSON requests
 
 // Apply rate limiter and API key authentication middleware globally
 app.use(limiter);       // Apply rate limiter across all routes to prevent abuse (max 100 requests per 15 minutes)
-app.use(apiKeyAuth);    // Apply API key authentication to all routes for access control
+// app.use(apiKeyAuth);    // Apply API key authentication to all routes for access control
 
 // Use the statsRoutes for any API route under /api
 app.use('/api', statsRoutes);  // All routes under /api will use the statsRoutes for handling crypto stats and deviation requests

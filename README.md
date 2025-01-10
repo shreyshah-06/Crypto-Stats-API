@@ -2,6 +2,9 @@
 
 This is a RESTful API for fetching cryptocurrency statistics, including the latest price, market cap, 24-hour price change, and price deviation for Bitcoin, Ethereum, and Matic. The API pulls data from the CoinGecko API and stores it in a MongoDB database for efficient querying.
 
+The API is deployed and accessible at: [https://crypto-stats-api-xn2z.onrender.com](https://crypto-stats-api-xn2z.onrender.com)
+
+
 ## Features
 
 - Fetch the latest price, market cap, and 24-hour change for Bitcoin, Ethereum, and Matic.
@@ -9,6 +12,7 @@ This is a RESTful API for fetching cryptocurrency statistics, including the late
 - Rate limiting to prevent abuse (100 requests per 15 minutes).
 - API key authentication for access control.
 - Background job to fetch crypto prices every 2 hours.
+- Efficient indexing in the database for faster queries and optimized performance.
 
 ## Technologies
 

@@ -85,7 +85,9 @@ The background job for fetching cryptocurrency prices runs every 2 hours, automa
 This API is protected by the following mechanisms:
 
 ### 1. **API Key Authentication**:
-Access to the endpoints requires a valid API key, passed in the `x-api-key` header.
+Access to the endpoints requires a valid API key, passed in the `x-api-key` header.  
+*Currently, API key authentication is disabled for ease of accessibility and demonstration purposes.*
+
 
 ### 2. **Rate Limiting**:
 To prevent DDoS attacks, the API limits each IP to 100 requests every 15 minutes.
